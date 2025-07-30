@@ -71,9 +71,9 @@ app.use('/confirmations',confirmations);
 
 
 const hostname = "0.0.0.0";
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 
-app.listen(port,hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+app.listen(PORT,hostname, () => {
+  console.log(`Server running at http://${hostname}:${PORT}/`);
 });
